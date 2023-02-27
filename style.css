@@ -1,0 +1,57 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+#container {
+    margin: 5% auto;
+    background-color: white;
+    max-width: 600px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#quoteDiv{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.75em;
+    text-align: center;
+    transition: color 0.5s ease;
+}
+
+#authorDiv{
+    font-style: italic;
+    text-align: right;
+    padding: 20px;
+    transition: color 0.5s ease;
+}
+
+#buttonDiv{
+    padding: 20px;
+    text-align: right;
+}
+
+#nextBtn{
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+#nextBtn:hover{
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        margin: 5% 5%;
+    }
+}
