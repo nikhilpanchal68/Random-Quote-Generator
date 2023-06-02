@@ -19,7 +19,7 @@ body {
 #quoteDiv{
     padding: 20px;
     font-weight: 600;
-    font-size: 1.75em;
+    font-size: 28px;
     text-align: center;
     transition: color 0.5s ease;
 }
@@ -29,6 +29,7 @@ body {
     text-align: right;
     padding: 20px;
     transition: color 0.5s ease;
+    font-size: 20px;
 }
 
 #buttonDiv{
@@ -49,9 +50,31 @@ body {
 #nextBtn:hover{
     opacity: 0.6;
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
+    #quoteDiv{
+        font-size: 24px;
+    }
+    #authorDiv{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
     #container {
         margin: 5% 5%;
+    }
+    #quoteDiv{
+        font-size: 20px;
+    }
+    #authorDiv{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #quoteDiv{
+        font-size: 18px;
+    }
+    #authorDiv{
+        font-size: 16px;
     }
 }
