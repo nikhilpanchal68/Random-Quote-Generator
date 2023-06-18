@@ -3,11 +3,31 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     transition: background-color 0.5s ease;
 }
-
+/* page loader */
+#loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 1.0;
+    background-color: white;
+    z-index: 99;
+  }
+  #loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150x;
+    height: 150px;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+  }
 #container {
     margin: 5% auto;
     background-color: white;
@@ -15,7 +35,6 @@ body {
     padding: 20px;
     font-size: 20px;
 }
-
 #quoteDiv{
     padding: 20px;
     font-weight: 600;
@@ -23,7 +42,6 @@ body {
     text-align: center;
     transition: color 0.5s ease;
 }
-
 #authorDiv{
     font-style: italic;
     text-align: right;
@@ -31,12 +49,10 @@ body {
     transition: color 0.5s ease;
     font-size: 20px;
 }
-
 #buttonDiv{
     padding: 20px;
     text-align: right;
 }
-
 #nextBtn{
     padding: 15px;
     background-color: blue;
@@ -46,11 +62,14 @@ body {
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
-
 #nextBtn:hover{
     opacity: 0.6;
 }
 @media screen and (max-width: 992px) {
+    #loading-image {
+        width: 120px;
+        height: 120px;
+      }
     #quoteDiv{
         font-size: 24px;
     }
@@ -59,6 +78,10 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+    #loading-image {
+        width: 100px;
+        height: 100px;
+      }
     #container {
         margin: 5% 5%;
     }
@@ -69,8 +92,11 @@ body {
         font-size: 18px;
     }
 }
-
 @media screen and (max-width: 576px) {
+    #loading-image {
+        width: 80px;
+        height: 80px;
+      }
     #quoteDiv{
         font-size: 18px;
     }
